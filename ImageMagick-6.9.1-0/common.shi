@@ -1,0 +1,21 @@
+# Test environment
+top_srcdir='/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0'
+top_builddir='/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0'
+
+set -a
+COMPARE="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities/compare"
+COMPOSITE="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities/composite"
+CONJURE="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities/conjure"
+CONVERT="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities/convert"
+DISPLAY="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities/display"
+IDENTIFY="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities/identify"
+MONTAGE="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities/montage" 
+VALIDATE="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/tests/validate"
+DRAWTEST="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/tests/drawtest"
+WANDTEST="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/tests/wandtest"
+LD_LIBRARY_PATH="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/magick/.libs:${LD_LIBRARY_PATH}"
+MAGICK_CODER_MODULE_PATH="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/coders"
+MAGICK_CONFIGURE_PATH="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/config:/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/config"
+MAGICK_FILTER_MODULE_PATH="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/filters"
+PATH="/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/utilities:/home/user/Desktop/pinteresting/ImageMagick-6.9.1-0/tests:${PATH}"
+set +a
