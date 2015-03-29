@@ -1,7 +1,5 @@
 class Pin < ActiveRecord::Base
-	validates :user_id, presence: true
-    validates :description, presence: true
-    has_attached_file :image,
+	has_attached_file :image,
             :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
       :url => "/system/:attachment/:id/:style/:filename"
     validates_attachment :image, content_type: { content_type: ['image/jpeg', 'image/jpg', 'image/png' 'image/gif'] },
@@ -9,4 +7,6 @@ class Pin < ActiveRecord::Base
 
     belongs_to :user
 
+    validates :image, presence: true
+    validates :description, presence: true
 end
